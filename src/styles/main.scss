@@ -1,0 +1,9 @@
+@import "_colors";
+
+/* Estilos componentes */
+@import "/src/components/layout/styles.scss";
+
+/* Configuración tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
