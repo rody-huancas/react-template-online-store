@@ -4,4 +4,4 @@ export * from "./layout/Footer"
 export * from "./layout/Social"
 
 /* Slider */
-export * from "./slider/Slider"
+export * from "./home/Slider"
