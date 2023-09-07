@@ -65,7 +65,7 @@ export const Header = () => {
               <img src={logo} alt="logo" />
             </div>
             {/* Menú */}
-            <div className="flex gap-4">
+            <div className="flex gap-4 font-medium">
               <Link className="text-gray-700">Inicio</Link>
               <Link className="text-gray-700">Nosotros</Link>
               <Link className="text-gray-700">Tienda</Link>

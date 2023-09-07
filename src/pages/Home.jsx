@@ -13,22 +13,24 @@ export const Home = () => {
       {/* Slider */}
       <Slider />
       {/* Datos envios */}
-      <div className="flex justify-center items-center gap-5 mt-5">
-        <Information
-          img={envio}
-          text="Lorem, ipsum dolor sit amet consectetur adipisicing elit."
-        />
-        <Information
-          img={pago}
-          text="Lorem, ipsum dolor sit amet consectetur adipisicing elit."
-        />
-        <Information
-          img={producto}
-          text="Lorem, ipsum dolor sit amet consectetur adipisicing elit."
-        />
+      <div className="w-[1200px] mx-auto">
+        <div className="flex justify-center items-center gap-5 mt-5">
+          <Information
+            img={envio}
+            text="Lorem, ipsum dolor sit amet consectetur adipisicing elit."
+          />
+          <Information
+            img={pago}
+            text="Lorem, ipsum dolor sit amet consectetur adipisicing elit."
+          />
+          <Information
+            img={producto}
+            text="Lorem, ipsum dolor sit amet consectetur adipisicing elit."
+          />
+        </div>
+        {/* Categorias */}
+        <Categories />
       </div>
-      {/* Categorias */}
-      <Categories />
     </>
   );
 };
