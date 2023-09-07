@@ -1,6 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+/* Layout */
 import { StoreLayout } from "../layouts/StoreLayout";
-import { Home } from "../pages/Home";
+/* Paginas */
+import { Home, About, Store } from "../pages";
 
 export const StoreRoutes = () => {
   return (
@@ -9,6 +11,8 @@ export const StoreRoutes = () => {
         <Routes>
           <Route path="/" element={<StoreLayout />}>
             <Route index element={<Home />} />
+            <Route path="/nosotros" element={<About />} />
+            <Route path="/tienda" element={<Store />} />
           </Route>
         </Routes>
       </BrowserRouter>

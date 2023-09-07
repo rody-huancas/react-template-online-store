@@ -1,19 +1,28 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { RxDotFilled } from "react-icons/rx";
+
+const SLIDE_DURATION = 3000;
 
 export const Slider = () => {
   const slides = [
     {
-      url: "/public/img1.webp",
+      url: "/img1.png",
     },
     {
-      url: "/public/img2.webp",
-    },
-    {
-      url: "/public/img3.jpeg",
+      url: "/img2.png",
     },
   ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % slides.length);
+    }, SLIDE_DURATION);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [slides.length]);
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -35,10 +44,10 @@ export const Slider = () => {
 
   return (
     <>
-      <p className="py-3 text-center top-color text-gray-700 font-bold">
+      {/* <p className="border border-t-gray-300 py-3 text-center text_color font-bold">
         HASTA 70% OFF - ENVIOS A TODO EL PERÚ
-      </p>
-      <div className=" h-[650px] w-full m-auto relative group">
+      </p> */}
+      <div className=" h-[650px] w-full m-auto relative group shadow-lg">
         <div
           style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
           className="w-full h-full bg-center bg-cover duration-500"

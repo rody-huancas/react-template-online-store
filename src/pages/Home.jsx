@@ -1,20 +1,17 @@
 /* Componentes */
-import { Slider } from "../components";
-import { Information } from "../components/home/Information";
+import { Slider, Categories, Information } from "../components";
 /* Imagenes */
 import envio from "../assets/images/home/envio.png";
 import pago from "../assets/images/home/pago.png";
 import producto from "../assets/images/home/producto.png";
-import { Categories } from "../components/home/Categories";
 
 export const Home = () => {
   return (
     <>
-      {/* Slider */}
       <Slider />
-      {/* Datos envios */}
-      <div className="w-[1200px] mx-auto">
-        <div className="flex justify-center items-center gap-5 mt-5">
+
+      <div className="w-full xl:w-[1200px] mx-auto">
+        <div className="mt-5 grid md:grid-cols-2 xl:grid-cols-3">
           <Information
             img={envio}
             text="Lorem, ipsum dolor sit amet consectetur adipisicing elit."
