@@ -1,9 +1,11 @@
 /* Helpers */
+import { Link } from "react-router-dom";
 import { formatearDinero } from "../../helpers/helpers";
 /* Iconos */
 import { IoMdEye } from "react-icons/io";
 
-export const Product = ({ image, name, price }) => {
+export const Product = ({ producto }) => {
+  const { id, image, name, price } = producto;
   return (
     <>
       <div className="w-60 bg-white shadow-lg p-4 rounded-lg flex flex-col gap-4 relative overflow-hidden item_product">
@@ -21,9 +23,13 @@ export const Product = ({ image, name, price }) => {
           </button>
         </div>
 
-        <button className="absolute top-10 -right-10 bg-red-400 text-white p-3 rounded-l-md btn_view transition-all duration-500 ease-in-out">
+        {/* Ver */}
+        <Link
+          to={`/producto/${id}`}
+          className="absolute top-10 -right-10 bg-red-400 text-white p-3 rounded-l-md btn_view transition-all duration-500 ease-in-out"
+        >
           <IoMdEye />
-        </button>
+        </Link>
       </div>
     </>
   );

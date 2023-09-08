@@ -27,22 +27,22 @@ export const Footer = () => {
           <div className="text-center sm:text-left">
             <p className="text-lg font-medium text-gray-900">About Us</p>
             <div className="flex flex-col gap-3 my-3">
-              <Link>Lorem, ipsum.</Link>
-              <Link>Lorem, ipsum.</Link>
+              <Link to={"/"}>Lorem, ipsum.</Link>
+              <Link to={"/"}>Lorem, ipsum.</Link>
             </div>
           </div>
           <div className="text-center sm:text-left">
             <p className="text-lg font-medium text-gray-900">About Us</p>
             <div className="flex flex-col gap-3 my-3">
-              <Link>Lorem, ipsum.</Link>
-              <Link>Lorem, ipsum.</Link>
+              <Link to={"/"}>Lorem, ipsum.</Link>
+              <Link to={"/"}>Lorem, ipsum.</Link>
             </div>
           </div>
           <div className="text-center sm:text-left">
             <p className="text-lg font-medium text-gray-900">About Us</p>
             <div className="flex flex-col gap-3 my-3">
-              <Link>Lorem, ipsum.</Link>
-              <Link>Lorem, ipsum.</Link>
+              <Link to={"/"}>Lorem, ipsum.</Link>
+              <Link to={"/"}>Lorem, ipsum.</Link>
             </div>
           </div>
         </div>
