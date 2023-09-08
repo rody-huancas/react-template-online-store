@@ -7,10 +7,10 @@ const SLIDE_DURATION = 3000;
 export const Slider = () => {
   const slides = [
     {
-      url: "/img1.png",
+      url: "/img1.jpg",
     },
     {
-      url: "/img2.png",
+      url: "/img2.jpg",
     },
   ];
 

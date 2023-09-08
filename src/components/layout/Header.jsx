@@ -27,6 +27,10 @@ export const Header = () => {
     };
   }, []);
 
+  const onShow = () => {
+    setShowCart(!showCart);
+  };
+
   return (
     <>
       <header className="w-full">
@@ -96,17 +100,17 @@ export const Header = () => {
               <div className="pt-2 text_color">
                 <FaUser />
               </div>
-              <button
-                onClick={() => setShowCart(true)}
-                className="pt-2 text_color"
-              >
+              <button onClick={onShow} className="pt-2 text_color relative">
                 <FaShoppingCart />
+                <span className="w-4 h-4 absolute left-3 -bottom-3 flex items-center justify-center bg-red-500 text-white rounded-full text-xs p-1">
+                  1
+                </span>
               </button>
             </div>
           </div>
         </nav>
 
-        <Shopping showCart={showCart} />
+        <Shopping showCart={showCart} onShow={onShow} />
       </header>
     </>
   );
