@@ -11,3 +11,6 @@ export * from "./home/Information"
 
 /* Product */
 export * from "./product/Product"
+
+/* Auth */
+export * from "./auth/LoginComponent"

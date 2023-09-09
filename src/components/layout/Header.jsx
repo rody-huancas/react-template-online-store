@@ -97,9 +97,9 @@ export const Header = () => {
                   <BiSearch />
                 </button>
               </div>
-              <div className="pt-2 text_color">
+              <Link to="/login" className="pt-2 text_color">
                 <FaUser />
-              </div>
+              </Link>
               <button onClick={onShow} className="pt-2 text_color relative">
                 <FaShoppingCart />
                 <span className="w-4 h-4 absolute left-3 -bottom-3 flex items-center justify-center bg-red-500 text-white rounded-full text-xs p-1">
