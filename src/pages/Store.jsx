@@ -23,8 +23,8 @@ export const Store = () => {
         <h1 className="text_color uppercase font-extrabold text-2xl ">
           Productos
         </h1>
-        <div className="w-full flex flex-col md:flex-row justify-center gap-5">
-          <div className="w-full md:w-1/3 h-2/3 bg-white shadow-lg p-5 rounded-lg text-gray-700 md:sticky md:top-24">
+        <div className="w-full flex flex-col sm:flex-row justify-center gap-5">
+          <div className="w-full md:w-1/3 h-2/3 bg-white shadow-lg p-5 rounded-lg text-gray-700 sm:sticky sm:top-32 md:top-24">
             <span className="uppercase font-bold">Filtros</span>
             <form onSubmit={(e) => e.preventDefault()}>
               <div className="flex flex-col mt-3">
@@ -53,7 +53,6 @@ export const Store = () => {
                     </div>
                   </div>
                 ))}
-
                 <div className="border-t border-gray-200 py-3">
                   <div className="flex justify-between items-center">
                     <label htmlFor="">Precio</label>
@@ -71,7 +70,7 @@ export const Store = () => {
             </form>
           </div>
           <div className="w-full md:w-2/3 px-5 flex justify-center">
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 md:place-items-center">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:place-items-center">
               {productos.map((producto) => (
                 <Product key={producto.id} producto={producto} />
               ))}
