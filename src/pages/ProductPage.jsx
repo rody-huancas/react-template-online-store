@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 /* Helpers */
-import { productos } from "../helpers/products";
-import { formatearDinero } from "../helpers/helpers";
+import { productos } from "@helpers/products";
+import { formatearDinero } from "@helpers/helpers";
 
 export const ProductPage = () => {
   const { id } = useParams();

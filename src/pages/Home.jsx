@@ -1,9 +1,9 @@
 /* Componentes */
-import { Slider, Categories, Information } from "../components";
+import { Slider, Categories, Information } from "@components";
 /* Imagenes */
-import envio from "../assets/images/home/envio.png";
-import pago from "../assets/images/home/pago.png";
-import producto from "../assets/images/home/producto.png";
+import envio from "@assets/images/home/envio.png";
+import pago from "@assets/images/home/pago.png";
+import producto from "@assets/images/home/producto.png";
 
 export const Home = () => {
   return (

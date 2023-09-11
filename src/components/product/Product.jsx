@@ -1,6 +1,6 @@
 /* Helpers */
 import { Link } from "react-router-dom";
-import { formatearDinero } from "../../helpers/helpers";
+import { formatearDinero } from "@helpers/helpers";
 /* Iconos */
 import { IoMdEye } from "react-icons/io";
 

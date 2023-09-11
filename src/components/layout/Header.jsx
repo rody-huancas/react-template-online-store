@@ -5,8 +5,8 @@ import { BiPhone, BiSearch, BiMessageDetail } from "react-icons/bi";
 import { GrLocation } from "react-icons/gr";
 import { FaUser, FaShoppingCart } from "react-icons/fa";
 /* Logo */
-import logo from "../../assets/images/logo.png";
-
+import logo from "@assets/images/logo.png";
+/* Modales */
 import { Shopping } from "../modals/Shopping";
 
 export const Header = () => {

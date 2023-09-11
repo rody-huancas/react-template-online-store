@@ -1,6 +1,6 @@
 /* Helpers */
 import { useState } from "react";
-import { formatearDinero } from "../../helpers/helpers";
+import { formatearDinero } from "@helpers/helpers";
 /* Iconos */
 import {
   AiOutlineClose,
@@ -20,7 +20,7 @@ export const Shopping = ({ showCart, onShow }) => {
         <div className="w-full h-full flex flex-col items-start gap-5 p-5">
           <button
             onClick={onShow}
-            className="bg-red-600 block p-1 rounded-lg text-white"
+            className="bg-red-400 block p-1 rounded-lg text-white"
           >
             <AiOutlineClose />
           </button>
@@ -52,7 +52,7 @@ export const Shopping = ({ showCart, onShow }) => {
             </div>
 
             <div className="flex flex-col items-center gap-2">
-              <button className="bg-red-500 p-2 rounded-lg text-white hover:bg-red-600 transition-colors duration-500 ease-in-out">
+              <button className="bg-red-400 p-2 rounded-lg text-white hover:bg-red-600 transition-colors duration-500 ease-in-out">
                 <AiOutlineDelete />
               </button>
               <input

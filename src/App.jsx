@@ -1,4 +1,4 @@
-import { StoreRoutes } from "./routes/StoreRoutes";
+import { StoreRoutes } from "@routes/StoreRoutes";
 
 const App = () => {
   return (

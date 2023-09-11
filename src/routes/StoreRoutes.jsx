@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 /* Layout */
-import { StoreLayout } from "../layouts/StoreLayout";
+import { StoreLayout } from "@layouts/StoreLayout";
 /* Paginas */
-import { Home, About, Store, ProductPage } from "../pages";
+import { Home, About, Store, ProductPage } from "@pages";
 
 export const StoreRoutes = () => {
   return (

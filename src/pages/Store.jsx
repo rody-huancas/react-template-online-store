@@ -1,8 +1,8 @@
 import { useState } from "react";
 /* Componentes */
-import { Product } from "../components";
+import { Product } from "@components";
 /* Helpers */
-import { productos, filtros } from "../helpers/products";
+import { productos, filtros } from "@helpers/products";
 /* Iconos */
 import { TiArrowSortedDown } from "react-icons/ti";
 
