@@ -1,9 +1,12 @@
 import { StoreRoutes } from "@routes/StoreRoutes";
+import { TiendaProvider } from "@context/TiendaProvider";
 
 const App = () => {
   return (
     <>
-      <StoreRoutes />
+      <TiendaProvider>
+        <StoreRoutes />
+      </TiendaProvider>
     </>
   );
 };

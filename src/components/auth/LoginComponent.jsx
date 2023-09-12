@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 export const LoginComponent = () => {
   return (
     <>
-      <div className="w-full xl:w-[1200px] mx-auto flex flex-col md:flex-row justify-center gap-4 my-10 p-5 lg:p-0">
+      <div className="w-full xl:w-[1200px] mx-auto flex flex-col md:flex-row justify-center gap-4 my-10 xl:my-20 p-5 lg:p-0">
         <div className="w-full md:w-1/2">
-          <h1 className="text-indigo-600 font-black text-5xl text-center md:text-left md:text-6xl">
+          <h1 className="text-indigo-600 font-extrabold text-5xl text-center md:text-left md:text-6xl">
             Inicia Sesión y Compra{" "}
             <span className="text-black">Nuestros Productos</span>
           </h1>

@@ -1,13 +1,16 @@
 import { useState } from "react";
 /* Componentes */
-import { Product } from "@components";
+import { Product, Pagination } from "@components";
 /* Helpers */
 import { productos, filtros } from "@helpers/products";
+import { generarNumeroPaginas } from "@helpers/helpers";
 /* Iconos */
 import { TiArrowSortedDown } from "react-icons/ti";
 
 export const Store = () => {
   const [filtroSeleccionado, setFiltroSeleccionado] = useState(null);
+  const [currentPage, setCurrentPage] = useState(1);
+  const productsPerPage = 9;
 
   const handleClick = (nombreFiltro) => {
     if (nombreFiltro === filtroSeleccionado) {
@@ -16,6 +19,11 @@ export const Store = () => {
       setFiltroSeleccionado(nombreFiltro);
     }
   };
+
+  /* Genear numero de paginas */
+  const totalPages = Math.ceil(productos.length / productsPerPage);
+
+  window.scrollTo({ top: 0, behavior: "smooth" });
 
   return (
     <>
@@ -69,12 +77,23 @@ export const Store = () => {
               </div>
             </form>
           </div>
-          <div className="w-full md:w-2/3 px-5 flex justify-center">
+          <div className="w-full md:w-2/3 px-5 flex flex-col items-center justify-center gap-5">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 md:place-items-center">
-              {productos.map((producto) => (
-                <Product key={producto.id} producto={producto} />
-              ))}
+              {productos
+                .slice(
+                  (currentPage - 1) * productsPerPage,
+                  currentPage * productsPerPage
+                )
+                .map((producto) => (
+                  <Product key={producto.id} producto={producto} />
+                ))}
             </div>
+            {/* Paginación */}
+            <Pagination
+              currentPage={currentPage}
+              totalPages={totalPages}
+              setCurrentPage={setCurrentPage}
+            />
           </div>
         </div>
       </section>

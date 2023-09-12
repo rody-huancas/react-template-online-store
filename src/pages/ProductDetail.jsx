@@ -3,7 +3,7 @@ import { useParams } from "react-router-dom";
 import { productos } from "@helpers/products";
 import { formatearDinero } from "@helpers/helpers";
 
-export const ProductPage = () => {
+export const ProductDetail = () => {
   const { id } = useParams();
   const producto = productos.find((producto) => producto.id === parseInt(id));
 

@@ -4,8 +4,13 @@ import { Slider, Categories, Information } from "@components";
 import envio from "@assets/images/home/envio.png";
 import pago from "@assets/images/home/pago.png";
 import producto from "@assets/images/home/producto.png";
+import { useTienda } from "@hooks/useTienda";
 
 export const Home = () => {
+  const { hola } = useTienda();
+
+  hola();
+
   return (
     <>
       <Slider />
